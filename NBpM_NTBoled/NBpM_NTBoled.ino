@@ -39,8 +39,8 @@ void loop() {
     int randomNumber = random(0, 1000);
     meshNode.sendBroadcast(String(randomNumber));
 
-    //oled.print(meshNode.getNodeId(), 1, 5, 5);
-    //oled.show(); // Update the display
+    oled.print(meshNode.getNodeId(), 1, 5, 5);
+    oled.show(); // Update the display
 
     lastSendTime = millis();
   }
